@@ -24,14 +24,14 @@ class NavBar extends Component {
               <img className='navbar__logo' src={inst_logo} alt="" width='105px' />
             </Grid>
             <Grid item xs={3}>
-              <input type="text" placeholder='Search' />
+              <input type="text" className='navbar__searchBar' placeholder='Search' />
             </Grid>
-            <Grid item xs={3} style={{ "display": "flex" }}>
+            <Grid item xs={3} style={{"display":"flex"}}>
               <img className='navbar__img' src={home} alt="" width='25px' />
               <img className='navbar__img' src={message} alt="" width='25px' />
               <img className='navbar__img' src={find} alt="" width='25px' />
               <img className='navbar__img' src={react} alt="" width='25px' />
-              <Avatar src={pp} />
+              <Avatar className='navbar__img' src={pp} style={{"maxWidth":"25px", "maxHeight":"25px"}} />
             </Grid>
             <Grid item xs={1}></Grid>
           </Grid>
